@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import Navigation from './components/Navigation';
+import Navigation from './components/navigation';
+import WhoAmI from './components/who-am-i';
 import './App.css';
 
 class App extends Component {
@@ -7,9 +8,12 @@ class App extends Component {
     return (
       <div className="App">
         <Navigation />
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <WhoAmI
+          name="Nico"
+          location="Sydney"
+          jobTitle="User Experience Designer"
+          message="Don't ask me to make a button bigger. Ask me why the button should be bigger."
+        />
       </div>
     );
   }
