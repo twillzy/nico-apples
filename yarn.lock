@@ -1045,6 +1045,12 @@ boom@5.x.x:
   dependencies:
     hoek "4.x.x"
 
+bourbon-neat@^1.9.0:
+  version "1.9.0"
+  resolved "https://registry.yarnpkg.com/bourbon-neat/-/bourbon-neat-1.9.0.tgz#fa38ea0ccbd857f0232030f5efd3b8a225b2a424"
+  dependencies:
+    node-sass "^4.1.1"
+
 bourbon@^5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/bourbon/-/bourbon-5.0.0.tgz#030ba01893889cd77d964101e735d446fd50426a"
@@ -4399,7 +4405,7 @@ node-sass-chokidar@^0.0.3:
     sass-graph "^2.1.1"
     stdout-stream "^1.4.0"
 
-node-sass@^4.5.3:
+node-sass@^4.1.1, node-sass@^4.5.3:
   version "4.7.2"
   resolved "https://registry.yarnpkg.com/node-sass/-/node-sass-4.7.2.tgz#9366778ba1469eb01438a9e8592f4262bcb6794e"
   dependencies:
