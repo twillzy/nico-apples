@@ -1,0 +1,14 @@
+{
+  "caseStudies": [
+    {
+      "id": "1",
+      "title": "drinkr",
+      "description": "A mobile app to order drinks at bars."
+    },
+    {
+      "id": "2",
+      "title": "glebe markets",
+      "description": "Mobile responsive website re-design."
+    }
+  ]
+}
