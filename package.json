@@ -9,6 +9,7 @@
     "bourbon": "^5.0.0",
     "bourbon-neat": "^1.9.0",
     "node-sass-chokidar": "^0.0.3",
+    "ramda": "^0.25.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
   },
