@@ -12,18 +12,24 @@ class App extends Component {
     super();
     this.state = {
       isHelloHovered: false,
-      isCaseStudyHovered: false,
+      showMenuButton: false,
     }
   }
 
   toggleHoverState = () => this.setState({ isHelloHovered: !this.state.isHelloHovered });
 
-  toggleCaseStudyHovered = () => this.setState({ isCaseStudyHovered: !this.state.isCaseStudyHovered });
+  onShowMenuButtonClicked = (event) => {
+    event.preventDefault();
+    this.setState({ showMenuButton: !this.state.showMenuButton });
+  }
 
   render() {
     return (
       <div className="App">
-        <Navigation />
+        <Navigation
+          showMenuButton={this.state.showMenuButton}
+          onShowMenuButtonClicked={this.onShowMenuButtonClicked}
+        />
         <WhoAmI
           name="Nico"
           location="Sydney"
@@ -34,8 +40,6 @@ class App extends Component {
         />
         <CaseStudies
           caseStudies={caseStudies}
-          toggleCaseStudyHovered={this.toggleCaseStudyHovered}
-          isCaseStudyHovered={this.state.isCaseStudyHovered}
         />
         {/* <AboutMe /> */}
         <Footer />
