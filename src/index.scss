@@ -7,6 +7,21 @@ body {
   background-color: whitesmoke;
   color: #2b2b2b;
   font-family: $font-stack-system;
+
+  .screen-wrapper {
+    max-width: 68em;
+    margin: 5em auto;
+    padding: 0 0.5em;
+  }
+
+  .section-header {
+    font-size: 0.7em;
+    font-weight: 600;
+    color: rgba(0,0,0,0.3);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1.5em;
+  }
 }
 
 header.navigation {
@@ -152,31 +167,60 @@ header.navigation {
 .hero {
   $large-screen: 50em !default;
   align-items: center;
-  background: image-url("background-image.png");
+  background-color: rgba(238, 75, 81, 1);
+  background-repeat: no-repeat;
   background-position: right;
   background-size: none;
   display: flex;
-  justify-content: center;
-  min-height: 40em;
-  padding: 2em;
+  min-height: 25em;
+  justify-content: flex-start;
+  color: white;
+  padding-left: 3em;
 
   @include media($large-screen) {
+    min-height: 40em;
+    padding-left: 0em;
     background-position: left;
     background-size: cover;
   }
 
   .hero-content {
-    max-width: 40em;
-    text-align: center;
+    max-width: 68em;
+    margin: 0 auto;
+    text-align: start;
 
-    @include media($large-screen) {
-      text-align: center;
+    .hello {
+      font-size: 5em;
+      text-shadow: 0px 25px 25px rgba(0, 0, 0, 0.1);
+      background-image: linear-gradient(to right, rgba(255,255,255,0.3) 40%, rgba(255, 255, 255, 0) 20%);
+      background-position: 0 165px;
+      background-size: 5px 2px;
+      background-repeat: repeat-x;
+      @include media($large-screen) {
+        font-size: 10em;
+      }
+    }
+
+    .who-am-i {
+      @include media($large-screen) {
+        padding-left: 2em;
+        font-size: 2em;
+      }
     }
   }
 
    .hero-logo {
     margin: auto;
   }
+}
+
+.hero.titus {
+  background-repeat: no-repeat;
+  background-image:
+    linear-gradient(rgba(238, 75, 81, 0.7), rgba(238, 75, 81, 0.7)),
+    url("./assets/images/titus-2.gif");
+  background-position: right;
+  background-size: cover;
 }
 
 .flex-boxes {
@@ -188,7 +232,6 @@ header.navigation {
   $flex-box-border-color: $light-gray;
   $flex-box-border: 1px solid $flex-box-border-color;
   $flex-box-background: lighten($light-gray, 10%);
-  $flex-box-gutter: 0.4em;
   $flex-box-width: 18em;
   $flex-box-color: transparentize($base-font-color, 0.3);
   $flex-box-top-colors:
@@ -206,9 +249,7 @@ header.navigation {
   flex-wrap: wrap;
   justify-content: center;
   text-align: center;
-  max-width: 68em;
-  margin: 0 auto;
-  padding: 1em;
+  padding: 1em 0;
 
   .flex-box {
     align-self: stretch;
@@ -217,8 +258,7 @@ header.navigation {
     box-shadow: inset 0 0 1px $flex-box-border-color, 0 2px 4px darken($base-background-color, 10%);
     display: block;
     flex: 2 2 15em;
-    margin: $flex-box-gutter;
-    padding: 2em 2em 3em 2em;
+    padding: 0 0 2em 0;
     text-decoration: none;
     transition: all 0.2s ease-in-out;
 
@@ -237,9 +277,8 @@ header.navigation {
 
     img {
       display: block;
-      height: 3em;
+      width: 100%;
       margin: 0 auto 1em;
-      opacity: 0.4;
     }
 
     .flex-title {
@@ -257,5 +296,287 @@ header.navigation {
 
   .flex-box-big {
     flex: 1 1 40em;
+  }
+}
+
+@mixin grid-item-columns($columns) {
+  width: (100% / 12) * $columns;
+}
+
+.grid-items-lines {
+  $base-background-color: white !default;
+  $dark-gray: #333 !default;
+  $light-gray: #DDD !default;
+  $medium-screen: 40em !default;
+  $large-screen: 53.75em !default;
+  $base-font-color: $dark-gray !default;
+  $grid-items-background: $base-background-color;
+  $grid-item-background: $base-background-color;
+  $grid-item-border: 1px solid transparentize($base-font-color, 0.8);
+  $grid-item-columns: 5;
+  $grid-item-big-columns: 7;
+  $grid-item-color: $base-font-color;
+  $grid-item-height: 18em;
+
+  @include clearfix;
+  position: relative;
+
+  .case-study {
+    margin-bottom: 2em;
+
+    &:focus,
+    &:hover .case-study-title::after {
+      width: 100%;
+    }
+
+    img {
+      transition: all 0.3s ease;
+    }
+    &:focus,
+    &:hover img {
+      transform: scale(1.05, 1.05)
+    }
+  }
+
+  .grid-item {
+    cursor: pointer;
+    float: left;
+    outline: none;
+    overflow: hidden;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    width: 100%;
+
+    @include media($large-screen) {
+      @include grid-item-columns($grid-item-columns);
+      margin-bottom: 4em;
+      height: $grid-item-height;
+    }
+
+    &:focus,
+    &:hover {
+      // background: transparentize($grid-item-color, 0.95);
+    }
+  }
+
+  .grid-item img {
+      display: block;
+      margin-bottom: 1.2em;
+      width: 100%;
+    }
+
+  .grid-item h1 {
+      color: $grid-item-color;
+      font-size: 1.3em;
+      margin-bottom: 0.4em;
+    }
+
+  .grid-item p {
+      color: transparentize($grid-item-color, 0.4);
+      text-transform: capitalize;
+      line-height: 1.5em;
+
+      @include media($medium-screen) {
+        max-width: 70%;
+      }
+    }
+
+  .grid-item-big {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @include media($large-screen) {
+      @include grid-item-columns($grid-item-big-columns);
+    }
+
+    .case-study-content {
+      margin-bottom: 4em;
+      @include media($large-screen) {
+        margin-bottom: 0;
+        padding-left: 3em;
+      }
+    }
+
+    .case-study-title {
+      text-transform: uppercase;
+      position: relative;
+      position: relative;
+      display: inline-block;
+      font-size: 1.5em;
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 0%;
+        border-bottom: 2px solid #000;
+        transition: 0.4s;
+      }
+    }
+
+    p {
+      @include media($medium-screen) {
+        max-width: 60%;
+      }
+    }
+  }
+
+
+// this, below, might not be the most beautiful solution but it removes the outer borders by using the background color.
+  .bottom-cover {
+    bottom: 0;
+    height: 3px;
+    position: absolute;
+    width: 100%;
+  }
+
+  .right-cover {
+    height: 100%;
+    position: absolute;
+    right: 0;
+    width: 4px;
+  }
+}
+
+
+.side-image {
+  $base-line-height: 1.5em !default;
+  $action-color: #477DCA !default;
+  $dark-gray: #333 !default;
+  $large-screen: 53.75em !default;
+  $base-font-color: $dark-gray !default;
+  $side-image-background-top: #B5EBEB;
+  $side-image-background-bottom: #5DAC5D;
+  $side-image-content-background: #F9F9F9;
+  $side-image-border: 1px solid darken(transparentize($side-image-background-bottom, 0.8), 30%);
+
+  background: $side-image-content-background;
+
+  @include media($large-screen) {
+    @include row(table);
+  }
+
+  .images-wrapper {
+    background: url("https://static.wixstatic.com/media/bbeaac_c951a7aa5bd146c1887e413e933249bc~mv2_d_1512_2016_s_2.jpg/v1/fill/w_752,h_880,al_c,q_85,usm_0.66_1.00_0.01/bbeaac_c951a7aa5bd146c1887e413e933249bc~mv2_d_1512_2016_s_2.webp"),
+                linear-gradient($side-image-background-top, $side-image-background-bottom),
+                no-repeat $side-image-background-top scroll;
+    background-color: $side-image-background-top;
+    background-size: cover;
+    border-bottom: $side-image-border;
+    display: block;
+    min-height: 12em;
+    padding: 3em;
+
+    @include media($large-screen) {
+      @include span-columns(4);
+      background-position: bottom;
+      background-size: cover;
+      border-right: $side-image-border;
+    }
+  }
+
+  .side-image-content {
+    @include span-columns(12);
+    padding: 1em 1em 4em 1em;
+
+    @include media($large-screen) {
+      @include span-columns(8);
+      padding: 4em 4em 8em 4em;
+    }
+
+    h1 {
+      margin-bottom: 0.9em;
+    }
+
+    h4 {
+      background: #BBB;
+      color: white;
+      display: inline-block;
+      font-size: 0.75em;
+      margin-bottom: 1.3em;
+      padding: 3px 8px;
+      text-transform: uppercase;
+    }
+
+    p {
+      color: $base-font-color;
+      line-height: $base-line-height;
+      margin-bottom: 3em;
+    }
+  }
+}
+
+.footer {
+  $base-spacing: 1.5em !default;
+  $action-color: #313131 !default;
+  $medium-screen: 40em !default;
+  $large-screen: 53.75em !default;
+  $footer-background: desaturate($action-color, 30%);
+  $footer-color: white;
+  $footer-link-color: transparentize($footer-color, 0.6);
+  $footer-disclaimer-color: transparentize($footer-color, 0.6);
+
+  background: $footer-background;
+  padding: ($base-spacing * 2) $gutter;
+  width: 100%;
+
+  .footer-logo {
+    margin-bottom: 2em;
+    text-align: center;
+
+    img {
+      height: 3em;
+    }
+  }
+
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: $base-spacing;
+  }
+
+  ul {
+    flex-basis: 13em;
+    flex-shrink: 0;
+    margin-bottom: $base-spacing * 2;
+    padding: 0;
+  }
+
+  li {
+    line-height: 1.5em;
+    list-style: none;
+    text-align: center;
+  }
+
+  li a {
+    color: $footer-link-color;
+    text-decoration: none;
+
+    &:focus,
+    &:hover {
+      color: transparentize($footer-color, 0);
+    }
+  }
+
+  li h3 {
+    color: $footer-color;
+    font-size: 1em;
+    margin-bottom: 0.4em;
+  }
+
+  hr {
+    border: 1px solid transparentize($footer-disclaimer-color, 0.3);
+    margin: 0 auto $base-spacing;
+    width: 12em;
+  }
+
+  p {
+    color: $footer-disclaimer-color;
+    font-size: 0.9em;
+    line-height: 1.5em;
+    margin: auto;
+    max-width: 35em;
+    text-align: center;
   }
 }

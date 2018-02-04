@@ -3,12 +3,16 @@
     {
       "id": "1",
       "title": "drinkr",
-      "description": "A mobile app to order drinks at bars."
+      "projectType": "concept project",
+      "description": "A mobile app to order drinks at bars.",
+      "imageUrl": "https://static.wixstatic.com/media/bbeaac_1178c22321d34fa7aa7e8aee7397638c~mv2_d_1920_1285_s_2.jpeg/v1/fill/w_898,h_558,al_c,q_85,usm_0.66_1.00_0.01/bbeaac_1178c22321d34fa7aa7e8aee7397638c~mv2_d_1920_1285_s_2.webp"
     },
     {
       "id": "2",
       "title": "glebe markets",
-      "description": "Mobile responsive website re-design."
+      "projectType": "client project",
+      "description": "Mobile responsive website re-design.",
+      "imageUrl": "https://static.wixstatic.com/media/bbeaac_bc3895e643a44350aa2818eaa1503444~mv2.jpg/v1/fill/w_896,h_556,al_c,q_85,usm_0.66_1.00_0.01/bbeaac_bc3895e643a44350aa2818eaa1503444~mv2.webp"
     }
   ]
 }
