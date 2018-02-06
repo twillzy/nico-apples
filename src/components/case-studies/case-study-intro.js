@@ -10,7 +10,7 @@ export default ({ caseStudy }) => {
   } = caseStudy;
 
   return (
-    <div className="case-study-overview white-bg">
+    <div className="case-study-intro white-bg">
       <div className="narrow-container">
         <h1>{title}.</h1>
         <p className="grey line-height-md"><span>{year} | {projectType}</span><br />{description}</p>

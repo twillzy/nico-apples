@@ -1,6 +1,7 @@
 import React from 'react';
 import { find, propEq } from 'ramda';
 import { caseStudies } from '../data/case-studies.json';
+import CaseStudyIntro from './case-studies/case-study-intro';
 import CaseStudyOverview from './case-studies/case-study-overview';
 
 export default ({ match }) => {
@@ -8,7 +9,7 @@ export default ({ match }) => {
   const caseStudy = find(propEq('id', caseStudyId))(caseStudies);
   return (
     <div className="">
-      <CaseStudyOverview caseStudy={caseStudy} />
+      <CaseStudyIntro caseStudy={caseStudy} />
     </div>
   );
 }
