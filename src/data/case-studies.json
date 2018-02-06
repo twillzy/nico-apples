@@ -3,8 +3,8 @@
     {
       "id": "1",
       "year": "2017",
-      "title": "drinkr",
-      "projectType": "concept project",
+      "title": "drinkr.",
+      "projectType": "Concept Project",
       "description": "A mobile app to order drinks at bars.",
       "imageUrl": "https://static.wixstatic.com/media/bbeaac_1178c22321d34fa7aa7e8aee7397638c~mv2_d_1920_1285_s_2.jpeg/v1/fill/w_898,h_558,al_c,q_85,usm_0.66_1.00_0.01/bbeaac_1178c22321d34fa7aa7e8aee7397638c~mv2_d_1920_1285_s_2.webp",
       "role": "Interviews & Research, Data Analysis, UI Design",
@@ -15,12 +15,26 @@
       "tools": "Paper & Pencil, Sketch, InVision, Google Forms"
     },
     {
+      "id": "3",
+      "year": "2018",
+      "title": "SES CALLOUT",
+      "projectType": "Client Project",
+      "description": "A mobile app to collect and manage availability of SES volunteers.",
+      "imageUrl": "https://s3-ap-southeast-2.amazonaws.com/nicoapples-images/ses-homepage.jpeg",
+      "role": "Stakeholder Management, Conduct Interviews, UI Design",
+      "brief": "NSW State Emergency Service (SES) is an emergency and rescue service dedicated to assisting the community with over 9,000 volunteers across the state. They currently don’t have a system to collect availability from their volunteers and want to implement a mobile app to help with this. The mobile app would also help SES management with allocating volunteers to emergency jobs based on their availability.",
+      "duration": "3 weeks",
+      "team": "Nico Mele, Sabina Abdurahim, Pep Sayabath",
+      "skills": "Interviews & Surveys, Research Synthesis, Empathy Mapping, Personas, Rapid Wireframing, Prototyping, Usability Testing, Design Iterations",
+      "tools": "Paper & Pencil, Google Forms, Axure, Loom"
+    },
+    {
       "id": "2",
       "year": "2017",
       "title": "glebe markets",
-      "projectType": "client project",
+      "projectType": "Client Project",
       "description": "Mobile responsive website re-design.",
-      "imageUrl": "https://static.wixstatic.com/media/bbeaac_bc3895e643a44350aa2818eaa1503444~mv2.jpg/v1/fill/w_896,h_556,al_c,q_85,usm_0.66_1.00_0.01/bbeaac_bc3895e643a44350aa2818eaa1503444~mv2.webp"
+      "imageUrl": "https://s3-ap-southeast-2.amazonaws.com/nicoapples-images/glebe-2.jpeg"
     }
   ]
 }
