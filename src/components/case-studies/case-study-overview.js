@@ -13,7 +13,7 @@ export default ({ caseStudy }) => {
   return (
     <div className="case-study-overview narrow-container porcelain-bg padding-top-sm padding-bottom-sm">
       <div className="margin-bottom-sm">
-        <h1 className="">Overview</h1>
+        <h1><span className="dotted-underline">Overview</span></h1>
       </div>
       <h2 className="section-header">My Role</h2>
       <p className="margin-bottom-sm line-height-md">{role}</p>

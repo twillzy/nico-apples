@@ -638,3 +638,10 @@ header.navigation {
 .line-height-md {
   line-height: 1.6em
 }
+
+.dotted-underline {
+  background-image: linear-gradient(to right, rgba(0, 0, 0 , 1) 40%, rgba(0, 0, 0, 0) 20%);
+  background-position: 0 37px;
+  background-size: 5px 5px;
+  background-repeat: repeat-x;
+}
