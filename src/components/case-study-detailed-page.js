@@ -14,7 +14,7 @@ export default ({ match }) => {
   const caseStudyId = match.params.id;
   const caseStudy = find(propEq('id', caseStudyId))(caseStudies);
   return (
-    <div className="">
+    <div className="padding-top-sm">
       <CaseStudyIntro caseStudy={caseStudy} />
       <CaseStudyOverview caseStudy={caseStudy} />
       <CaseStudyResearch caseStudy={caseStudy} />
