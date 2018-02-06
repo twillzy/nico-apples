@@ -11,12 +11,12 @@ export default ({ caseStudy }) => {
   } = caseStudy;
 
   return (
-    <div className="case-study-overview porcelain-bg margin-top-sm margin-bottom-sm">
+    <div className="case-study-overview porcelain-bg padding-top-sm padding-bottom-sm">
       <div className="narrow-container">
         <div className="margin-bottom-sm">
           <h1 className="">Overview</h1>
         </div>
-        <h2 className="section-header">Role</h2>
+        <h2 className="section-header">My Role</h2>
         <p className="margin-bottom-sm">{role}</p>
         <h2 className="section-header">Brief</h2>
         <p className="margin-bottom-sm">{brief}</p>
