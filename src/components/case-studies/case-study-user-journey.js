@@ -1,6 +1,4 @@
 import React from 'react';
-import persona1 from '../../assets/images/drinkr-persona-1.png';
-import persona2 from '../../assets/images/drinkr-persona-2.png';
 
 export default ({ caseStudy }) => {
   const {
