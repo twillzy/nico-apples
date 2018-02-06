@@ -4,6 +4,8 @@ import { caseStudies } from '../data/case-studies.json';
 import CaseStudyIntro from './case-studies/case-study-intro';
 import CaseStudyOverview from './case-studies/case-study-overview';
 import CaseStudyResearch from './case-studies/case-study-research';
+import CaseStudyKeyFindings from './case-studies/case-study-key-findings';
+import CaseStudySynthesis from './case-studies/case-study-synthesis';
 
 export default ({ match }) => {
   const caseStudyId = match.params.id;
@@ -13,6 +15,8 @@ export default ({ match }) => {
       <CaseStudyIntro caseStudy={caseStudy} />
       <CaseStudyOverview caseStudy={caseStudy} />
       <CaseStudyResearch caseStudy={caseStudy} />
+      <CaseStudyKeyFindings caseStudy={caseStudy} />
+      <CaseStudySynthesis caseStudy={caseStudy} />
     </div>
   );
 }
