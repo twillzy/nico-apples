@@ -2,6 +2,7 @@
   "caseStudies": [
     {
       "id": "1",
+      "year": "2017",
       "title": "drinkr",
       "projectType": "concept project",
       "description": "A mobile app to order drinks at bars.",
@@ -9,6 +10,7 @@
     },
     {
       "id": "2",
+      "year": "2017",
       "title": "glebe markets",
       "projectType": "client project",
       "description": "Mobile responsive website re-design.",

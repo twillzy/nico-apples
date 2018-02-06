@@ -3,15 +3,19 @@ import React from 'react';
 export default ({ caseStudy }) => {
   const {
     title,
+    projectType,
+    year,
     description,
     imageUrl,
   } = caseStudy;
 
   return (
     <div className="case-study-overview">
-      <h1>{title}</h1>
-      <p>{description}</p>
-      <img src={imageUrl} alt="case study" />
+      <div className="narrow-container">
+        <h1>{title}.</h1>
+        <p><span>{year} | {projectType}</span><br />{description}</p>
+        <img class="width-100" src={imageUrl} alt="case study" />
+      </div>
     </div>
   );
 };
