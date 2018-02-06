@@ -20,7 +20,7 @@ class HomePage extends Component {
 
   render() {
     return (
-      <div className="App padding-top-sm">
+      <div className="App">
         <WhoAmI
           name="Nico"
           location="Sydney"

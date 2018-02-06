@@ -1,10 +1,19 @@
 import React from 'react';
 
-export default () => <div className="side-image screen-wrapper">
-  <div className="side-image-content">
-    <h1>About Me</h1>
-    <p>I am a Sydney based User Experience Designer with a background in marketing. I am passionate about all things digital and I love designing human centered solutions that solve real problems. Having worked in marketing for several years, I know how to balance users and business needs.
-      I'd love to tell you more about my transition into the UX world, let's grab a coffee.</p>
+export default () => (
+  <div className="white-bg padding-top-sm padding-bottom-sm">
+    <div className="wide-container margin-bottom-sm">
+      <h1>About Me</h1>
+      <div className="row">
+        <div className="lg-span-column-6">
+          <p className="margin-top-zero line-height-md">My name is Nico, I am a User Experience Designer and creative problem solver based in Sydney. After working as a marketing professional for 7 years, I recently transitioned to the world of UX to satisfy my thirst for creativity and combine it with existing skillsets. I spent many years trying to understand the users’ needs, now I design solutions for them. I am passionate about creating digital experiences that get to the core of the problem and put the users’ needs at the centre of the design process.</p>
+          <p className="line-height-md">I am also the proud owner of Cool As A Fox, an e-commerce selling colourful, gender-neutral socks.I started the business with my partner as an outlet to express my creativity and in just two years it has grown from a small side project to a successful e-commerce with over 4000 happy customers in Australia.</p>
+          <p className="line-height-md">I also happen to love pizza (without pineapple) and cats. I'd love to tell you more about what gets me excited, let's grab a coffee.</p>
+          <p className="line-height-md"><strong>WHY NICO APPLES?</strong> <span role="img" aria-label="apple">🍎 </span></p>
+          <p className="line-height-md">I love eating apples and I love apple products, but that’s not the reason behind my nickname. It’s a lot simpler than that: my last name means apples in Italian. I randomly picked it as my instagram handle a few years ago, and my friends started to call me nicoapples so I got stuck with it.</p>
+        </div>
+        <img className="width-100 lg-span-column-6" src="https://static.wixstatic.com/media/bbeaac_c951a7aa5bd146c1887e413e933249bc~mv2_d_1512_2016_s_2.jpg/v1/fill/w_752,h_880,al_c,q_85,usm_0.66_1.00_0.01/bbeaac_c951a7aa5bd146c1887e413e933249bc~mv2_d_1512_2016_s_2.webp" alt="" />
+      </div>
+    </div>
   </div>
-  <div className="images-wrapper"></div>
-</div>
+);

@@ -1,6 +1,8 @@
 @import "bourbon/core/bourbon";
 @import "bourbon-neat/app/assets/stylesheets/neat";
 
+$large-screen: 53.75em !default;
+
 body {
   margin: 0;
   padding: 0;
@@ -597,6 +599,10 @@ header.navigation {
   margin-bottom: 3em;
 }
 
+.margin-top-zero {
+  margin-top: 0;
+}
+
 .margin-top-sm {
   margin-top: 3em;
 }
@@ -619,6 +625,10 @@ header.navigation {
 
 .width-100 {
   width: 100%;
+}
+
+.width-50 {
+  width: 50%;
 }
 
 .width-5 {
@@ -659,4 +669,18 @@ header.navigation {
 
 .center {
   text-align: center;
+}
+
+.header-push {
+  min-height: 60px;
+}
+
+.row {
+  @include row();
+}
+
+.lg-span-column-6 {
+  @include media($large-screen) {
+    @include span-columns(6);
+  }
 }
