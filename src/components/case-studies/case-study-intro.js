@@ -14,7 +14,7 @@ export default ({ caseStudy }) => {
       <div className="narrow-container">
         <h1>{title}.</h1>
         <p className="grey line-height-md"><span>{year} | {projectType}</span><br />{description}</p>
-        <img class="width-100" src={imageUrl} alt="case study" />
+        <img className="width-100" src={imageUrl} alt="case study" />
       </div>
     </div>
   );
