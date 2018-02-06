@@ -586,6 +586,19 @@ header.navigation {
   margin: 0 auto;
 }
 
+.wide-container {
+  max-width: 68em;
+  margin: 0 auto;
+}
+
+.margin-bottom-sm {
+  margin-bottom: 3em;
+}
+
+.margin-top-sm {
+  margin-top: 3em;
+}
+
 .width-100 {
   width: 100%;
 }
@@ -600,4 +613,16 @@ header.navigation {
 
 .white-bg {
   background-color: white;
+}
+
+.porcelain-bg {
+  background-color: #F4F6F7;
+}
+
+.font-lg {
+  font-size: 5em;
+}
+
+.font-md {
+  font-size: 3.5em;
 }

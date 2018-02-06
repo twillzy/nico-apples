@@ -10,6 +10,7 @@ export default ({ match }) => {
   return (
     <div className="">
       <CaseStudyIntro caseStudy={caseStudy} />
+      <CaseStudyOverview caseStudy={caseStudy} />
     </div>
   );
 }
