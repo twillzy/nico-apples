@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import Navigation from './navigation';
 import WhoAmI from './who-am-i';
 import CaseStudies from './case-studies';
-import Footer from './footer';
 import { caseStudies } from '../data/case-studies.json';
 
 class HomePage extends Component {
@@ -10,7 +8,6 @@ class HomePage extends Component {
     super();
     this.state = {
       isHelloHovered: false,
-      showMenuButton: false,
     }
   }
 
@@ -24,10 +21,6 @@ class HomePage extends Component {
   render() {
     return (
       <div className="App">
-        <Navigation
-          showMenuButton={this.state.showMenuButton}
-          onShowMenuButtonClicked={this.onShowMenuButtonClicked}
-        />
         <WhoAmI
           name="Nico"
           location="Sydney"
@@ -39,7 +32,6 @@ class HomePage extends Component {
         <CaseStudies
           caseStudies={caseStudies}
         />
-        <Footer />
       </div>
     );
   }

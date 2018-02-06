@@ -1,5 +1,6 @@
 /*eslint-disable */
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default ({ showMenuButton, onShowMenuButtonClicked }) =>
   <header className="navigation" role="banner">
@@ -7,9 +8,9 @@ export default ({ showMenuButton, onShowMenuButtonClicked }) =>
       <a href="#" role="button" className="navigation-menu-button" id="js-mobile-menu" onClick={onShowMenuButtonClicked}>MENU</a>
       <nav>
         <ul id="js-navigation-menu" className={`navigation-menu ${showMenuButton ? "show" : ""}`}>
-          <li className="nav-link"><a href="">Home</a></li>
-          <li className="nav-link"><a href="">Case Studies</a></li>
-          <li className="nav-link"><a href="">Contact</a></li>
+          <li className="nav-link"><Link to="/">Home</Link></li>
+          <li className="nav-link"><Link to="">Case Studies</Link></li>
+          <li className="nav-link"><Link to="">Contact</Link></li>
         </ul>
       </nav>
     </div>
