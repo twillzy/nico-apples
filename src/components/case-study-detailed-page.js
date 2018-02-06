@@ -9,6 +9,7 @@ import CaseStudySynthesis from './case-studies/case-study-synthesis';
 import CaseStudyUserPersonas from './case-studies/case-study-user-personas';
 import CaseStudyFeaturePrioritisation from './case-studies/case-study-feature-prioritisation';
 import CaseStudyUserJourney from './case-studies/case-study-user-journey';
+import CaseStudyDesign from './case-studies/case-study-design';
 
 export default ({ match }) => {
   const caseStudyId = match.params.id;
@@ -23,6 +24,7 @@ export default ({ match }) => {
       <CaseStudyUserPersonas caseStudy={caseStudy} />
       <CaseStudyFeaturePrioritisation caseStudy={caseStudy} />
       <CaseStudyUserJourney caseStudy={caseStudy} />
+      <CaseStudyDesign caseStudy={caseStudy} />
     </div>
   );
 }

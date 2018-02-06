@@ -5,7 +5,7 @@ export default ({ caseStudy }) => {
   } = caseStudy;
 
   return (
-    <div className="case-study-overview white-bg padding-top-sm padding-bottom-sm">
+    <div className="case-study-overview porcelain-bg padding-top-sm padding-bottom-sm">
       <div className="margin-bottom-sm narrow-container ">
         <h1 className="">Synthesising Our Research</h1>
         <p className="margin-bottom-sm line-height-md">Looking through the research, we noticed patterns that were consistent across our interviews and surveys. This helped us come up with a problem statement and a solution to some of the points raised by our users.</p>

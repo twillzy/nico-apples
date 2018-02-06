@@ -7,7 +7,7 @@ export default ({ caseStudy }) => {
   } = caseStudy;
 
   return (
-    <div className="case-study-overview porcelain-bg padding-top-sm padding-bottom-sm">
+    <div className="case-study-overview white-bg padding-top-sm padding-bottom-sm">
       <div className="margin-bottom-sm narrow-container ">
         <h1 className="">User Journey</h1>
         <p className="margin-bottom-sm line-height-md">I then mapped out a typical user journey for Charlotte breaking down the process of when she goes out to a bar. The user journey map shows shows the experience before and after our proposed solution.</p>

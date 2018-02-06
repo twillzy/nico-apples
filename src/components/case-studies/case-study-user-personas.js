@@ -7,7 +7,7 @@ export default ({ caseStudy }) => {
   } = caseStudy;
 
   return (
-    <div className="case-study-overview porcelain-bg padding-top-sm padding-bottom-sm">
+    <div className="case-study-overview white-bg padding-top-sm padding-bottom-sm">
       <div className="margin-bottom-sm narrow-container ">
         <h1 className="">User Personas</h1>
         <p className="margin-bottom-sm line-height-md">We developed two personas to synthesise our research. Both personas were created based on our initial interviews. One persona would represent the customer perspective while the other one would represent the bar perspective.</p>
