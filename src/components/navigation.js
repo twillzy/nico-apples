@@ -9,8 +9,8 @@ export default ({ showMenuButton, onShowMenuButtonClicked }) =>
       <nav>
         <ul id="js-navigation-menu" className={`navigation-menu ${showMenuButton ? "show" : ""}`}>
           <li className="nav-link"><Link to="/">Home</Link></li>
-          <li className="nav-link"><Link to="">Case Studies</Link></li>
-          <li className="nav-link"><Link to="">Contact</Link></li>
+          <li className="nav-link"><Link to="/case-studies">Case Studies</Link></li>
+          <li className="nav-link"><Link to="">About</Link></li>
         </ul>
       </nav>
     </div>

@@ -5,6 +5,7 @@ import {
 } from 'react-router-dom';
 import ScrollToTop from './components/scroll-to-top';
 import HomePage from './components/home-page';
+import CaseStudiesPage from './components/case-studies';
 import DrinkrPage from './components/case-study-detailed-page';
 import Navigation from './components/navigation';
 import Footer from './components/footer';
@@ -31,6 +32,7 @@ class App extends Component {
             onShowMenuButtonClicked={this.onShowMenuButtonClicked}
           />
           <Route exact path="/" component={HomePage} />
+          <Route exact path="/case-studies" component={CaseStudiesPage} />
           <Route exact path="/case-studies/:id" component={DrinkrPage} />
           <Footer />
         </ScrollToTop>
