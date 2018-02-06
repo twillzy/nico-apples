@@ -12,7 +12,7 @@ export default () => (
           <p className="line-height-md"><strong>WHY NICO APPLES?</strong> <span role="img" aria-label="apple">🍎 </span></p>
           <p className="line-height-md">I love eating apples and I love apple products, but that’s not the reason behind my nickname. It’s a lot simpler than that: my last name means apples in Italian. I randomly picked it as my instagram handle a few years ago, and my friends started to call me nicoapples so I got stuck with it.</p>
         </div>
-        <img className="width-100 lg-span-column-6" src="https://static.wixstatic.com/media/bbeaac_c951a7aa5bd146c1887e413e933249bc~mv2_d_1512_2016_s_2.jpg/v1/fill/w_752,h_880,al_c,q_85,usm_0.66_1.00_0.01/bbeaac_c951a7aa5bd146c1887e413e933249bc~mv2_d_1512_2016_s_2.webp" alt="" />
+        <img className="width-100 lg-span-column-6" src="https://s3-ap-southeast-2.amazonaws.com/nicoapples-images/nico.JPG" alt="" />
       </div>
     </div>
   </div>
