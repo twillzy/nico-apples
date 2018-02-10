@@ -5,7 +5,7 @@ import resume from '../assets/documents/nico-resume.pdf';
 
 export default ({ showMenuButton, onShowMenuButtonClicked }) =>
   <div>
-    <div className="header-push"></div>
+    <div class="header-push"></div>
     <header className="navigation" role="banner">
       <div className="navigation-wrapper">
         <a href="#" role="button" className="navigation-menu-button" id="js-mobile-menu" onClick={onShowMenuButtonClicked}>MENU</a>
