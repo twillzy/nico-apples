@@ -1,18 +1,11 @@
 version: 2
 jobs:
-  test:
-    docker:
-      - image: circleci/node:latest
-    steps:
-      - checkout
-      - run: npm install
-
   build:
     docker:
       - image: circleci/node:latest
     steps:
       - checkout
-      - run: npm run build
+      - run: npm run install
 
   # deploy-to-prod-job:
   #   steps:
