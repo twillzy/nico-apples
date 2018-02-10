@@ -5,7 +5,7 @@ jobs:
       - image: circleci/node:latest
     steps:
       - checkout
-      - run: npm run install
+      - run: npm install
 
   # deploy-to-prod-job:
   #   steps:
