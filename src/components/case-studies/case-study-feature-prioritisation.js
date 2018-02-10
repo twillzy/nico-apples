@@ -2,10 +2,7 @@ import React from 'react';
 import prior1 from '../../assets/images/drinkr-prior-1.JPG';
 import prior2 from '../../assets/images/drinkr-prior-2.png';
 
-export default ({ caseStudy }) => {
-  const {
-  } = caseStudy;
-
+export default () => {
   return (
     <div className="case-study-overview porcelain-bg padding-top-sm padding-bottom-sm">
       <div className="margin-bottom-sm narrow-container ">

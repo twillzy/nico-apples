@@ -1,5 +1,4 @@
 import React from 'react';
-import prototype from '../../assets/images/drinkr-prototype.png';
 
 export default ({ caseStudy }) => {
   return (

@@ -1,10 +1,7 @@
 import React from 'react';
 import drinkrInfo from '../../assets/images/drinkr-info.png';
 
-export default ({ caseStudy }) => {
-  const {
-  } = caseStudy;
-
+export default () => {
   return (
     <div className="case-study-overview white-bg padding-top-sm padding-bottom-sm">
       <div className="narrow-container margin-bottom-sm">

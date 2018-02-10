@@ -2,10 +2,7 @@ import React from 'react';
 import persona1 from '../../assets/images/drinkr-persona-1.png';
 import persona2 from '../../assets/images/drinkr-persona-2.png';
 
-export default ({ caseStudy }) => {
-  const {
-  } = caseStudy;
-
+export default () => {
   return (
     <div className="case-study-overview white-bg padding-top-sm padding-bottom-sm">
       <div className="margin-bottom-sm narrow-container ">

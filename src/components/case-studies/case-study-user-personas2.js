@@ -1,9 +1,6 @@
 import React from 'react';
 
-export default ({ caseStudy }) => {
-  const {
-  } = caseStudy;
-
+export default () => {
   return (
     <div className="case-study-overview porcelain-bg padding-top-sm padding-bottom-sm">
       <div className="margin-bottom-sm narrow-container ">
