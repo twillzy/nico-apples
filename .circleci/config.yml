@@ -8,18 +8,19 @@ jobs:
       - run: npm install
       - run: npm run build
 
-  # deploy-to-prod-job:
-  #   steps:
-  #     - checkout
-  #     - run
-  #       name: Install dependencies
-  #       command: |
-  #         apt-get -y -qq update
-  #         apt-get -y -qq install python3.4-dev
-  #         curl -O https://bootstrap.pypa.io/get-pip.py
-  #         python3.4 get-pip.py --user
-  #         pip install awscli --upgrade --user
-  #         aws s3 sync /build s3://nicoapples.com/build --delete
+  deploy:
+    docker:
+      - image: circleci/node:latest
+    steps:
+      - checkout
+      - run
+        command: |
+          apt-get -y -qq update
+          apt-get -y -qq install python3.4-dev
+          curl -O https://bootstrap.pypa.io/get-pip.py
+          python3.4 get-pip.py --user
+          pip install awscli --upgrade --user
+          aws s3 sync /build s3://nicoapples.com/build --delete
 
 # workflows:
 #   version: 2
