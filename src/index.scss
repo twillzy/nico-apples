@@ -2,6 +2,8 @@
 @import "bourbon-neat/app/assets/stylesheets/neat";
 
 $large-screen: 53.75em !default;
+$medium-screen: 40em !default;
+$nico-red: rgba(238, 75, 81, 1);
 
 body {
   margin: 0;
@@ -543,6 +545,11 @@ header.navigation {
   margin-top: 4em;
 }
 
+.padding-vertical-sm {
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
 .padding-top-sm {
   padding-top: 3em;
 }
@@ -553,6 +560,11 @@ header.navigation {
 
 .padding-left-xsm {
   padding-left: 2em;
+}
+
+.padding-horizontal-xsm {
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 .width-100 {
@@ -569,6 +581,10 @@ header.navigation {
 
 .line-height-md {
   line-height: 1.5em;
+}
+
+.line-height-lg {
+  line-height: 2em;
 }
 
 .grey {
@@ -615,4 +631,30 @@ header.navigation {
   @include media($large-screen) {
     @include span-columns(6);
   }
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.none {
+  display: none;
+}
+
+.lg-flex {
+  @include media($large-screen) {
+    display: flex;
+  }
+}
+
+.nico-red {
+  color: $nico-red;
 }
