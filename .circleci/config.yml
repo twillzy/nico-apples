@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/node:latest-browsers
+      - image: node:6-alpine
     steps:
       - checkout
       - run: npm install
