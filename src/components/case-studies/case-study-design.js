@@ -5,7 +5,9 @@ export default ({ caseStudy }) => {
     <div>
       <div className="case-study-overview porcelain-bg padding-top-sm padding-bottom-sm">
         <div className="margin-bottom-sm narrow-container ">
-          <h1 className="">Design Studio</h1>
+          <div className="narrow-container margin-bottom-sm">
+            <h1>Design Studio</h1>
+          </div>
           <h4 className="section-header">Rapid Wireframing</h4>
           <p className="margin-bottom-sm line-height-md">After choosing the most important features, as a team we sketched rapid wireframes for our ideas. We decided to focus only on the “MUST” features at this stage. We timeboxed ourselves and compared the results. We then combined our ideas and worked collectively on the first iteration.</p>
           <img className="margin-bottom-sm width-100 border-bottom-red" src="https://s3-ap-southeast-2.amazonaws.com/nicoapples-images/drinkr/wireframing.jpg" alt="" />
@@ -20,14 +22,14 @@ export default ({ caseStudy }) => {
         <div className="margin-bottom-sm narrow-container ">
           <h1 className="">Prototyping & Usability Testing</h1>
           <p className="line-height-md">We converted our paper prototype into mid-fidelity wireframes using Sketch. We then did guerrilla testing with 6 participants and asked them to complete the following actions:</p>
+          <ol className="line-height-md">
+            <li>Find a bar nearby</li>
+            <li>Place a drinks order</li>
+            <li>Leave a special request with your order</li>
+            <li>Collect your drinks at the bar</li>
+            <li>Check how much money they have spent</li>
+          </ol>
           <p className="margin-bottom-sm line-height-md">
-            <ol>
-              <li>Find a bar nearby</li>
-              <li>Place a drinks order</li>
-              <li>Leave a special request with your order</li>
-              <li>Collect your drinks at the bar</li>
-              <li>Check how much money they have spent</li>
-            </ol>
             A few issues were raised by our testers.
           </p>
           <img className="width-100 border-bottom-red" src="https://s3-ap-southeast-2.amazonaws.com/nicoapples-images/drinkr/usability-testing.png" alt="" />
@@ -44,8 +46,8 @@ export default ({ caseStudy }) => {
               width="438"
               height="930"
               src="//invis.io/ZTF9S25F7"
-              frameborder="0"
-              allowfullscreen>
+              frameBorder="0"
+              allowFullScreen>
             </iframe>
           </div>
         </div>
@@ -54,12 +56,10 @@ export default ({ caseStudy }) => {
       <div className="case-study-overview white-bg padding-top-sm padding-bottom-sm">
         <div className="margin-bottom-sm narrow-container ">
           <h1 className="">Next Steps</h1>
-          <p className="margin-bottom-sm line-height-md">
-            <ul>
-              <li>Implement additional features for the mobile app, including the possibility of splitting the bill with your friends and a review system.</li>
-              <li>Implement the employee side interface</li>
-            </ul>
-          </p>
+          <ul className="margin-bottom-sm line-height-md">
+            <li>Implement additional features for the mobile app, including the possibility of splitting the bill with your friends and a review system.</li>
+            <li>Implement the employee side interface</li>
+          </ul>
         </div>
       </div>
     </div>
