@@ -24,6 +24,11 @@ class App extends Component {
     this.setState({ showMenuButton: !this.state.showMenuButton });
   }
 
+  onNavLinkClicked = (event) => {
+    event.preventDefault();
+    this.setState({ showMenuButton: false });
+  }
+
   render() {
     return (
       <Router >
@@ -31,6 +36,7 @@ class App extends Component {
           <Navigation
             showMenuButton={this.state.showMenuButton}
             onShowMenuButtonClicked={this.onShowMenuButtonClicked}
+            onNavLinkClicked={this.onNavLinkClicked}
           />
           <Route exact path="/" component={HomePage} />
           <Route exact path="/case-studies" component={CaseStudiesPage} />
