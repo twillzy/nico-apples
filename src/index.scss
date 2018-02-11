@@ -2,6 +2,7 @@
 @import "bourbon-neat/app/assets/stylesheets/neat";
 
 $large-screen: 53.75em !default;
+$nico-red: rgba(238, 75, 81, 1);
 
 body {
   margin: 0;
@@ -631,4 +632,8 @@ header.navigation {
 .nostyle-visited:visited {
   text-decoration: inherit;
   color: inherit;
+}
+
+.nico-red {
+  color: $nico-red;
 }

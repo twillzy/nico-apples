@@ -13,10 +13,10 @@ export default ({ caseStudy }) => {
         <img className="margin-bottom-sm width-100 border-bottom-red" src="https://s3-ap-southeast-2.amazonaws.com/nicoapples-images/drinkr/interview.jpg" alt="" />
 
         <h4 className="section-header">What Users Said</h4>
-        <img className="margin-bottom-sm width-100 border-bottom-red" src="https://s3-ap-southeast-2.amazonaws.com/nicoapples-images/drinkr/quotes.png" alt="" />
+        <img className="margin-bottom-sm width-100" src="https://s3-ap-southeast-2.amazonaws.com/nicoapples-images/drinkr/quotes.png" alt="" />
 
-        <h4 className="section-header">Key Findings</h4>
-        <img className="margin-bottom-sm width-100 border-bottom-red" src="https://s3-ap-southeast-2.amazonaws.com/nicoapples-images/drinkr/survey.png" alt="" />
+        <h4 className="section-header">Key Findings From Surveys</h4>
+        <img className="margin-bottom-sm width-100" src="https://s3-ap-southeast-2.amazonaws.com/nicoapples-images/drinkr/survey-v2.png" alt="" />
       </div>
     </div>
   );

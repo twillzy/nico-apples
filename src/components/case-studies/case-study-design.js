@@ -20,8 +20,15 @@ export default ({ caseStudy }) => {
 
       <div className="case-study-overview white-bg padding-top-sm padding-bottom-sm">
         <div className="margin-bottom-sm narrow-container ">
-          <h1 className="">Prototyping & Usability Testing</h1>
-          <p className="line-height-md">We converted our paper prototype into mid-fidelity wireframes using Sketch. We then did guerrilla testing with 6 participants and asked them to complete the following actions:</p>
+          <div className="narrow-container margin-bottom-sm">
+            <h1 className="">Prototyping & Usability Testing</h1>
+          </div>
+          <h4 className="section-header">Styleguide</h4>
+          <p className="line-height-md">We created a styleguide and converted our paper prototype into mid-fidelity wireframes using Sketch.</p>
+          <img className="width-100 margin-bottom-sm" src="https://s3-ap-southeast-2.amazonaws.com/nicoapples-images/drinkr/style-guide-v2.png" alt="" />
+
+          <h4 className="section-header">Feedback from usability testing</h4>
+          <p className="line-height-md">We conducted guerrilla testing with 6 participants and asked them to complete the following actions:</p>
           <ol className="line-height-md">
             <li>Find a bar nearby</li>
             <li>Place a drinks order</li>
@@ -32,14 +39,15 @@ export default ({ caseStudy }) => {
           <p className="margin-bottom-sm line-height-md">
             A few issues were raised by our testers.
           </p>
-          <img className="width-100 border-bottom-red" src="https://s3-ap-southeast-2.amazonaws.com/nicoapples-images/drinkr/usability-testing.png" alt="" />
+          <img className="width-100" src="https://s3-ap-southeast-2.amazonaws.com/nicoapples-images/drinkr/usability-testing-v2.png" alt="" />
         </div>
       </div>
 
       <div className="case-study-overview porcelain-bg padding-top-sm padding-bottom-sm">
         <div className="margin-bottom-sm narrow-container ">
           <h1 className="">Final Prototype (High-Fidelity)</h1>
-          <p className="margin-bottom-sm line-height-md">When the project finished, I decided to spend an additional week working on the user interface. I addressed the colour-contrast issues previously raised and did usability testing with a few other users. I produced the final high-fidelity interactive prototype below using Sketch and InVision. Enjoy!</p>
+          <p className="line-height-md">When the project finished, I decided to spend an additional week working on the user interface. I addressed the colour-contrast issues previously raised and did usability testing with a few other users. I produced the final high-fidelity interactive prototype below using Sketch and InVision.</p>
+          <p className="margin-bottom-sm line-height-md">How about you try ordering a round of drinks at the closest bar?  Keep in mind you’ve got to keep track of your spending.</p>
           <div className="center">
             <iframe
               title="drinkr"
@@ -50,6 +58,7 @@ export default ({ caseStudy }) => {
               allowFullScreen>
             </iframe>
           </div>
+          <p className="center margin-bottom-sm line-height-md">Demo doesn’t work? Try using this InVision <span className="nico-red"><a className="nostyle-link nostyle-visited" href="https://invis.io/BFF7VVXG8">link</a></span>.</p>
         </div>
       </div>
 
