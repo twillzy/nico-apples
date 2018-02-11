@@ -180,6 +180,7 @@ header.navigation {
   justify-content: flex-start;
   color: white;
   padding-left: 3em;
+  padding-right: 3em;
 
   @include media($large-screen) {
     min-height: 40em;
