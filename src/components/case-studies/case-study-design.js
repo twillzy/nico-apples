@@ -1,23 +1,18 @@
 import React from 'react';
-import prototype from '../../assets/images/drinkr-prototype.png';
 
 export default ({ caseStudy }) => {
   return (
     <div>
       <div className="case-study-overview porcelain-bg padding-top-sm padding-bottom-sm">
         <div className="margin-bottom-sm narrow-container ">
-          <h1 className="">Rapid Wireframing</h1>
+          <h1 className="">Design Studio</h1>
+          <h4 className="section-header">Rapid Wireframing</h4>
           <p className="margin-bottom-sm line-height-md">After choosing the most important features, as a team we sketched rapid wireframes for our ideas. We decided to focus only on the “MUST” features at this stage. We timeboxed ourselves and compared the results. We then combined our ideas and worked collectively on the first iteration.</p>
-          <img className="width-100 border-bottom-red" src="https://static.wixstatic.com/media/bbeaac_e90608b33993475db2ac035e1773d500~mv2.png/v1/fill/w_798,h_540,al_c,usm_0.66_1.00_0.01/bbeaac_e90608b33993475db2ac035e1773d500~mv2.png" alt="" />
-        </div>
-      </div>
-
-      <div className="case-study-overview porcelain-bg padding-top-sm padding-bottom-sm">
-        <div className="margin-bottom-sm narrow-container ">
-          <h1 className="">Early Feedback</h1>
+          <img className="margin-bottom-sm width-100 border-bottom-red" src="https://s3-ap-southeast-2.amazonaws.com/nicoapples-images/drinkr/wireframing.jpg" alt="" />
+          <h4 className="section-header">Early Feedback</h4>
           <p className="margin-bottom-sm line-height-md">We conducted a few user tests using paper prototypes to get early feedback on our flow. Positive reaction ensured that we are moving in the right direction. A few issues were raised by the testers, including unclear wording in some pages and some navigation issues.</p>
-          <img className="margin-bottom-sm width-100 border-bottom-red" src="https://static.wixstatic.com/media/bbeaac_97d1fdfaf6ac4a37ad9d26a08972976f~mv2.png/v1/fill/w_898,h_470,al_c,usm_0.66_1.00_0.01/bbeaac_97d1fdfaf6ac4a37ad9d26a08972976f~mv2.png" alt="" />
-          <img className="width-100 border-bottom-red" src="https://static.wixstatic.com/media/bbeaac_90b18464f8354a4fae326c3a85c46cad~mv2.png/v1/fill/w_544,h_520,al_c,usm_0.66_1.00_0.01/bbeaac_90b18464f8354a4fae326c3a85c46cad~mv2.png" alt="" />
+          <img className="margin-bottom-sm width-100 border-bottom-red" src="https://s3-ap-southeast-2.amazonaws.com/nicoapples-images/drinkr/paper-prototype.jpg" alt="" />
+          <img className="width-100 border-bottom-red" src="https://s3-ap-southeast-2.amazonaws.com/nicoapples-images/drinkr/paper-testing.jpg" alt="" />
         </div>
       </div>
 
@@ -35,7 +30,7 @@ export default ({ caseStudy }) => {
             </ol>
             A few issues were raised by our testers.
           </p>
-          <img className="width-100 border-bottom-red" src={prototype} alt="" />
+          <img className="width-100 border-bottom-red" src="https://s3-ap-southeast-2.amazonaws.com/nicoapples-images/drinkr/usability-testing.png" alt="" />
         </div>
       </div>
 

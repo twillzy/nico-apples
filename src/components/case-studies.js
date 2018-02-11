@@ -4,7 +4,7 @@ import { caseStudies as caseStudiesJson } from '../data/case-studies.json';
 
 export default ({ caseStudies = caseStudiesJson, toggleCaseStudyHovered, isCaseStudyHovered }) =>
   <div className="grid-items-lines screen-wrapper">
-    <h4 className="section-header">Case Studies —</h4>
+    <h4 className="section-header">Case Studies</h4>
     {caseStudies.map(cs =>
       <CaseStudy
         caseStudy={cs}
