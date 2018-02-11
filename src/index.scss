@@ -503,7 +503,7 @@ header.navigation {
 
   hr {
     border: 1px solid transparentize($footer-disclaimer-color, 0.3);
-    margin: 0 auto $base-spacing;
+    margin: $base-spacing auto $base-spacing;
     width: 12em;
   }
 
@@ -541,6 +541,11 @@ header.navigation {
 
 .margin-top-md {
   margin-top: 4em;
+}
+
+.margin-horizontal-xsm {
+  margin-left: 0.5em;
+  margin-right: 0.5em;
 }
 
 .padding-top-sm {
@@ -588,7 +593,7 @@ header.navigation {
 }
 
 .font-md {
-  font-size: 3.5em;
+  font-size: 1.5em;
 }
 
 .line-height-md {
@@ -615,4 +620,14 @@ header.navigation {
   @include media($large-screen) {
     @include span-columns(6);
   }
+}
+
+.nostyle-link:link {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+.nostyle-visited:visited {
+  text-decoration: inherit;
+  color: inherit;
 }
