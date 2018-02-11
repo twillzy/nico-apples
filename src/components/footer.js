@@ -15,6 +15,6 @@ export default () => (
       </span>
     </p>
     <hr />
-    <p>Designed with <span role="img" aria-label="love">♥️</span> by Nico Mele. Coded by <a className="nostyle-link nostyle-visited" href="github.com/twillzy">twillzy</a>.</p>
+    <p>Designed with <span role="img" aria-label="love">♥️</span> by Nico Mele. Coded by <a className="nostyle-link nostyle-visited" href="https://www.github.com/twillzy">twillzy</a>.</p>
   </footer >
 );
