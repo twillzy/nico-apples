@@ -43,7 +43,7 @@ export default ({ caseStudy }) => {
         </div>
       </div>
 
-      <div className="case-study-overview porcelain-bg padding-top-sm padding-bottom-sm">
+      <div id="drinkrPrototype" className="case-study-overview porcelain-bg padding-top-sm padding-bottom-sm">
         <div className="margin-bottom-sm narrow-container ">
           <h1 className="">Final Prototype (High-Fidelity)</h1>
           <p className="line-height-md">When the project finished, I decided to spend an additional week working on the user interface. I addressed the colour-contrast issues previously raised and did usability testing with a few other users. I produced the final high-fidelity interactive prototype below using Sketch and InVision.</p>
