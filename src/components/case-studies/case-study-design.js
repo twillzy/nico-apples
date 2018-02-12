@@ -58,7 +58,7 @@ export default ({ caseStudy }) => {
               allowFullScreen>
             </iframe>
           </div>
-          <p className="center margin-bottom-sm line-height-md">Demo doesn’t work? Try using this InVision <span className="nico-red"><a className="nostyle-link nostyle-visited" href="https://invis.io/BFF7VVXG8">link</a></span>.</p>
+          <p className="center margin-bottom-sm line-height-md">Demo doesn’t work? Try using this InVision <span className="nico-red"><a className="nostyle-link nostyle-visited" href="https://invis.io/BFF7VVXG8" target="_blank" rel="noopener noreferrer">link</a></span>.</p>
         </div>
       </div>
 

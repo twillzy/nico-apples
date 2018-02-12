@@ -5,7 +5,6 @@ import CaseStudyIntro from './case-studies/case-study-intro';
 import CaseStudyOverview from './case-studies/case-study-overview';
 import CaseStudyResearch from './case-studies/case-study-research';
 import CaseStudyResearch2 from './case-studies/case-study-research2';
-import CaseStudyKeyFindings2 from './case-studies/case-study-key-findings2';
 import CaseStudySynthesis from './case-studies/case-study-synthesis';
 import CaseStudyUserPersonas from './case-studies/case-study-user-personas';
 import CaseStudyUserPersonas2 from './case-studies/case-study-user-personas2';
@@ -37,7 +36,6 @@ export default ({ match }) => {
           <CaseStudyIntro caseStudy={caseStudy} />
           <CaseStudyOverview caseStudy={caseStudy} />
           <CaseStudyResearch2 caseStudy={caseStudy} />
-          <CaseStudyKeyFindings2 caseStudy={caseStudy} />
           <CaseStudyUserPersonas2 caseStudy={caseStudy} />
           <CaseStudyFeaturePrioritisation2 caseStudy={caseStudy} />
           <CaseStudyDesign2 caseStudy={caseStudy} />
