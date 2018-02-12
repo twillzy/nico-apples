@@ -44,13 +44,6 @@ export default ({ match }) => {
       return (
         <div className="">
           <CaseStudyIntro caseStudy={caseStudy} />
-          <CaseStudyOverview caseStudy={caseStudy} />
-          <CaseStudyResearch caseStudy={caseStudy} />
-          <CaseStudySynthesis caseStudy={caseStudy} />
-          <CaseStudyUserPersonas caseStudy={caseStudy} />
-          <CaseStudyFeaturePrioritisation caseStudy={caseStudy} />
-          <CaseStudyUserJourney caseStudy={caseStudy} />
-          <CaseStudyDesign caseStudy={caseStudy} />
         </div>)
   }
 }
