@@ -1,7 +1,7 @@
 /*eslint-disable */
 import React from 'react';
 import { Link } from 'react-router-dom';
-import resume from '../assets/documents/nico-resume.pdf';
+import resume from '../assets/documents/nico-resume-final.pdf';
 
 export default ({ showMenuButton, onShowMenuButtonClicked, onNavLinkClicked }) =>
   <div>
