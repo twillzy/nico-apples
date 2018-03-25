@@ -1,21 +1,6 @@
 {
   "caseStudies": [
     {
-      "id": "1",
-      "year": "2017",
-      "title": "DRINKR.",
-      "projectType": "Concept Project",
-      "description": "A mobile app to order drinks at bars.",
-      "imageUrl": "https://s3-ap-southeast-2.amazonaws.com/nicoapples-images/drinkrhome.jpeg",
-      "role": "Interviews & Research, Data Analysis, Usability Testing, UI Design",
-      "brief": "Use research to find the pain points for bar-goers and understand how technology can improve their experience",
-      "duration": "3 weeks",
-      "team": "Nico Mele, Benjamin Wong, Srimathy Karuppiah",
-      "skills": "Interviews & Surveys, Research Synthesis, Competitor Analysis, Personas, Rapid Wireframing, Prototyping, Usability Testing, Design Iterations",
-      "tools": "Paper & Pencil, Sketch, InVision, Google Forms",
-      "prototypeUrl": "#drinkrPrototype"
-    },
-    {
       "id": "3",
       "year": "2018",
       "title": "SES CALLOUT",
@@ -29,6 +14,21 @@
       "skills": "Interviews & Surveys, Research Synthesis, Empathy Mapping, Personas, Rapid Wireframing, Prototyping, Usability Testing, Design Iterations, Stakeholders Presentation",
       "tools": "Paper & Pencil, Google Forms, Axure, Loom",
       "prototypeUrl": "#sesPrototype"
+    },
+    {
+      "id": "1",
+      "year": "2017",
+      "title": "DRINKR.",
+      "projectType": "Concept Project",
+      "description": "A mobile app to order drinks at bars.",
+      "imageUrl": "https://s3-ap-southeast-2.amazonaws.com/nicoapples-images/drinkrhome.jpeg",
+      "role": "Interviews & Research, Data Analysis, Usability Testing, UI Design",
+      "brief": "Use research to find the pain points for bar-goers and understand how technology can improve their experience",
+      "duration": "3 weeks",
+      "team": "Nico Mele, Benjamin Wong, Srimathy Karuppiah",
+      "skills": "Interviews & Surveys, Research Synthesis, Competitor Analysis, Personas, Rapid Wireframing, Prototyping, Usability Testing, Design Iterations",
+      "tools": "Paper & Pencil, Sketch, InVision, Google Forms",
+      "prototypeUrl": "#drinkrPrototype"
     },
     {
       "id": "2",
