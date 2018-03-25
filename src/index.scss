@@ -184,14 +184,14 @@ header.navigation {
   padding-right: 3em;
 
   @include media($large-screen) {
-    min-height: 40em;
+    min-height: 100vh;
     padding-left: 0em;
     background-position: left;
     background-size: cover;
   }
 
   .hero-content {
-    max-width: 68em;
+    max-width: 66em;
     margin: 0 auto;
     text-align: start;
 
