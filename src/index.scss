@@ -18,7 +18,7 @@ html, body {
   padding: 0;
   background-color: white;
   color: #2b2b2b;
-  font-family: "Source Sans Pro", $font-stack-system;
+  font-family: "Source Sans Pro", sans-serif, $font-stack-system;
 
   .screen-wrapper {
     max-width: 68em;
@@ -159,9 +159,12 @@ header.navigation {
     
     a {
       position: relative;
-      color: $navigation-color;
       display: inline-block;
       text-decoration: none;
+      text-transform: uppercase;
+      font-size: 0.9em;
+      color: rgba(255, 255, 255, 0.8);
+      letter-spacing: 2px;
 
       &:focus,
       &:hover {
