@@ -4,6 +4,12 @@
 $large-screen: 53.75em !default;
 $nico-red: rgba(238, 75, 81, 1);
 
+@mixin beyonce() {
+  background-image:
+  linear-gradient(rgba(238, 75, 81, 0.7), rgba(238, 75, 81, 0.7)),
+  url("./assets/images/bey.gif");
+}
+
 html, body {
   width: 100%;
   height: 100%;
@@ -205,7 +211,13 @@ header.navigation {
     padding-left: 0em;
     background-position: left;
     background-size: cover;
+    background-image: none;
   }
+
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  @include beyonce();
 
   .hero-content {
     max-width: 66em;
@@ -239,12 +251,9 @@ header.navigation {
 }
 
 .hero.titus {
-  background-repeat: no-repeat;
-  background-image:
-    linear-gradient(rgba(238, 75, 81, 0.7), rgba(238, 75, 81, 0.7)),
-    url("./assets/images/bey.gif");
-  background-position: right;
-  background-size: cover;
+  @include media($large-screen) {
+    @include beyonce();
+  }
 }
 
 .flex-boxes {
