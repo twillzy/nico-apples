@@ -22,8 +22,10 @@ export default () => (
         <h4 className="section-header">A FEW CURIOSITIES</h4>
         <ul className="margin-bottom-sm line-height-md">
           <li>I am the proud parent of a beautiful cat. Say hi to <span className="nico-red"><a className="nostyle-link nostyle-visited" href="https://www.instagram.com/pristhecat/" target="_blank" rel="noopener noreferrer">Pris</a></span>!</li>
-          <li>I am an avid traveller, I have been to 45 countries and I try to visit at least one new one every year.</li>
-          <li>My alter ego is Titus Andromedon and I am bald by choice.</li>
+          <li>I am an avid traveller, I have been to 45+ countries and I try to visit at least one new one every year. You can see some of my favourite travel photos on <span className="nico-red"><a className="nostyle-link nostyle-visited" href="https://www.instagram.com/nicoapples/" target="_blank" rel="noopener noreferrer">Instagram</a></span>.</li>
+          <li>My favourite movie is Mulholland Drive (massive fan of David Lynch). Every time I watch it I come up with a different theory about the ending.</li>
+          <li>I love eating apples, but my nickname @nicoapples is derived from my last name. It means apples in Italian.</li>
+          <li>My favourite day in the Sydney party calendar is Mardi Gras and I have been volunteering/marching since 2012.</li>
         </ul>
       </div>
     </div>
