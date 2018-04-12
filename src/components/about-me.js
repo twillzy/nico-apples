@@ -17,14 +17,14 @@ export default () => (
 
     <div className="case-study-overview porcelain-bg padding-top-sm padding-bottom-sm">
       <div className="margin-bottom-sm narrow-container ">
-        <h4 className="section-header">WHY NICO APPLES? <span role="img" aria-label="apple">🍎 </span></h4>
+        <h4 className="section-header">MY APPROACH TO UX DESIGN</h4>
         <p className="margin-bottom-sm line-height-md">I love eating apples and I love apple products, but that’s not the reason behind my nickname. It’s a lot simpler than that: my last name means apples in Italian. I randomly picked it as my instagram handle a few years ago, and my friends started to call me nicoapples so I got stuck with it.</p>
         <h4 className="section-header">A FEW CURIOSITIES</h4>
         <ul className="margin-bottom-sm line-height-md">
           <li>I am the proud parent of a beautiful cat. Say hi to <span className="nico-red"><a className="nostyle-link nostyle-visited" href="https://www.instagram.com/pristhecat/" target="_blank" rel="noopener noreferrer">Pris</a></span>!</li>
           <li>I am an avid traveller, I have been to 45+ countries and I try to visit at least one new one every year. You can see some of my favourite travel photos on <span className="nico-red"><a className="nostyle-link nostyle-visited" href="https://www.instagram.com/nicoapples/" target="_blank" rel="noopener noreferrer">Instagram</a></span>.</li>
           <li>My favourite movie is Mulholland Drive (massive fan of David Lynch). Every time I watch it I come up with a different theory about the ending.</li>
-          <li>I love eating apples, but my nickname @nicoapples is derived from my last name. It means apples in Italian.</li>
+          <li>I love eating apples <span role="img" aria-label="apple">🍎 </span>, but my nickname @nicoapples is derived from my last name. It means apples in Italian.</li>
           <li>My favourite day in the Sydney party calendar is Mardi Gras and I have been volunteering/marching since 2012.</li>
         </ul>
       </div>
