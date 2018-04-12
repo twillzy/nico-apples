@@ -18,8 +18,8 @@ export default () => (
     <div className="case-study-overview porcelain-bg padding-top-sm padding-bottom-sm">
       <div className="margin-bottom-sm narrow-container ">
         <h4 className="section-header">MY APPROACH TO UX DESIGN</h4>
-        <p className="margin-bottom-sm line-height-md">I love eating apples and I love apple products, but that’s not the reason behind my nickname. It’s a lot simpler than that: my last name means apples in Italian. I randomly picked it as my instagram handle a few years ago, and my friends started to call me nicoapples so I got stuck with it.</p>
-        <h4 className="section-header">A FEW CURIOSITIES</h4>
+        <img className="width-100" src="https://s3-ap-southeast-2.amazonaws.com/nicoapples-images/approach+to+ux.png" alt="" />
+        <h4 className="margin-top-md section-header">A FEW CURIOSITIES</h4>
         <ul className="margin-bottom-sm line-height-md">
           <li>I am the proud parent of a beautiful cat. Say hi to <span className="nico-red"><a className="nostyle-link nostyle-visited" href="https://www.instagram.com/pristhecat/" target="_blank" rel="noopener noreferrer">Pris</a></span>!</li>
           <li>I am an avid traveller, I have been to 45+ countries and I try to visit at least one new one every year. You can see some of my favourite travel photos on <span className="nico-red"><a className="nostyle-link nostyle-visited" href="https://www.instagram.com/nicoapples/" target="_blank" rel="noopener noreferrer">Instagram</a></span>.</li>
