@@ -683,3 +683,51 @@ header.navigation {
     }
   }
 }
+
+.about-me {
+  display: block;
+
+  @include media($large-screen) {
+    display: table;
+  }
+
+  .about-me-text, .about-me-img-container {
+    display: block;
+    
+    @include media($large-screen) {
+      padding-right: 3em;
+      display: table-cell;
+      vertical-align: top;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .about-me-text {
+    width: 100%;
+
+    @include media($large-screen) {
+      width: 60%;
+    }
+  }
+  
+  .about-me-img-container {
+    position: relative;
+    width: 100%;
+
+    @include media($large-screen) {
+      width: 40%;
+    }
+  
+    img {
+      height: 100%;
+      width: 100%;
+
+      @include media($large-screen) {
+        position: absolute;
+      }
+    }
+  }
+}
