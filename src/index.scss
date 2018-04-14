@@ -13,7 +13,6 @@ $nico-red: rgba(238, 75, 81, 1);
 html, body {
   width: 100%;
   height: 100%;
-  overflow-x: hidden; 
   margin: 0;
   padding: 0;
   background-color: white;
@@ -455,23 +454,6 @@ header.navigation {
       }
     }
   }
-
-
-// this, below, might not be the most beautiful solution but it removes the outer borders by using the background color.
-  .bottom-cover {
-    bottom: 0;
-    height: 3px;
-    position: absolute;
-    width: 100%;
-  }
-
-  .right-cover {
-    height: 100%;
-    position: absolute;
-    right: 0;
-    width: 4px;
-  }
-}
 
 .footer {
   $base-spacing: 1.5em !default;

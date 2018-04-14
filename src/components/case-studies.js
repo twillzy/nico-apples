@@ -11,5 +11,4 @@ export default ({ caseStudies = caseStudiesJson, toggleCaseStudyHovered, isCaseS
         toggleCaseStudyHovered={toggleCaseStudyHovered}
         isCaseStudyHovered={isCaseStudyHovered}
         key={cs.title} />)}
-    <div className="bottom-cover"></div>
   </div>
