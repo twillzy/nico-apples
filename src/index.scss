@@ -36,6 +36,10 @@ html, body {
   }
 }
 
+h1 {
+  font-weight: 600;
+}
+
 header.navigation {
   $base-border-color: gainsboro !default;
   $base-border-radius: 3px !default;
