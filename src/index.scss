@@ -15,7 +15,7 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  background-color: white;
+  background-color: #F4F6F7;
   color: #2b2b2b;
   font-family: "Source Sans Pro", sans-serif, $font-stack-system;
 
@@ -361,11 +361,17 @@ header.navigation {
   position: relative;
 
   .case-study {
-    margin-bottom: 2em;
-
-    &:focus,
-    &:hover .case-study-title::after {
-      width: 100%;
+    display: block;
+    @include media($large-screen) {
+      display: flex;
+    }
+    margin-bottom: 4em;
+    background-color: $base-background-color;
+    
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      box-shadow: 0 10px 20px #c7cad1;
+      transform: translate(0, -5px);
     }
 
     img {
@@ -373,29 +379,21 @@ header.navigation {
     }
     &:focus,
     &:hover img {
-      transform: scale(1.05, 1.05)
+      box-shadow: 0 10px 20px #c7cad1;
     }
   }
 
   .grid-item {
     cursor: pointer;
-    float: left;
     outline: none;
     overflow: hidden;
     text-decoration: none;
     transition: all 0.2s ease-in-out;
     width: 100%;
-
-    @include media($large-screen) {
-      @include grid-item-columns($grid-item-columns);
-      margin-bottom: 4em;
-      height: $grid-item-height;
-    }
   }
 
   .grid-item img {
       display: block;
-      margin-bottom: 1.2em;
       width: 100%;
     }
 
@@ -416,18 +414,19 @@ header.navigation {
     }
 
   .grid-item-big {
-    display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: $base-background-color;
+
     @include media($large-screen) {
-      @include grid-item-columns($grid-item-big-columns);
+      display: flex;
     }
 
     .case-study-content {
-      margin-bottom: 4em;
+      padding: 0 0 1em 1em;
       @include media($large-screen) {
         margin-bottom: 0;
-        padding-left: 3em;
+        padding: 0 0 0 3em;
       }
     }
 
@@ -437,15 +436,6 @@ header.navigation {
       display: inline-block;
       font-size: 1.5em;
       font-weight: 600;
-      &::after {
-        content: '';
-        position: absolute;
-        bottom: -5px;
-        left: 0;
-        width: 0%;
-        border-bottom: 2px solid #000;
-        transition: 0.4s;
-      }
     }
 
     p {
