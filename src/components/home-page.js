@@ -24,7 +24,7 @@ class HomePage extends Component {
         <WhoAmI
           name="Nico"
           location="Sydney"
-          jobTitle="User Experience Designer"
+          jobTitle="UX Designer"
           message="Don't ask me to make a button bigger. Ask me why the button should be bigger."
           toggleHoverState={this.toggleHoverState}
           isHelloHovered={this.state.isHelloHovered}
