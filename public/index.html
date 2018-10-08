@@ -10,7 +10,7 @@
       homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
     -->
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
-  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon-joy.ico">
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:600" rel="stylesheet">
   <!--
@@ -25,10 +25,14 @@
   <title>Nico Mele | UX Portfolio</title>
   <script type="text/javascript">
     window.onblur = function() {
+      var link = document.querySelector("link[rel*='icon']")
+      link.href = "%PUBLIC_URL%/favicon-sad.ico";
       document.title = 'Come back :(';
     }
 
     window.onfocus = function() {
+      var link = document.querySelector("link[rel*='icon']")
+      link.href = "%PUBLIC_URL%/favicon-joy.ico";
       document.title = 'Nico Mele | UX Portfolio';
     }
   </script>
