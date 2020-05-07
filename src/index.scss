@@ -5,17 +5,23 @@ $large-screen: 53.75em !default;
 $nico-red: rgba(238, 75, 81, 1);
 
 @mixin beyonce() {
-  background-image:
-  linear-gradient(rgba(238, 75, 81, 0.7), rgba(238, 75, 81, 0.7)),
-  url("./assets/images/cat-2.gif");
+  background-image: linear-gradient(
+      rgba(238, 75, 81, 0.7),
+      rgba(238, 75, 81, 0.7)
+    ),
+    url("./assets/images/cat-2.gif");
 }
 
-html, body {
+html,
+body,
+#root {
   width: 100%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
-  background-color: #F4F6F7;
+  background-color: #f4f6f7;
   color: #2b2b2b;
   font-family: "Source Sans Pro", sans-serif, $font-stack-system;
 
@@ -28,11 +34,15 @@ html, body {
   .section-header {
     font-size: 0.7em;
     font-weight: 600;
-    color: rgba(0,0,0,0.3);
+    color: rgba(0, 0, 0, 0.3);
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 1.5em;
   }
+}
+
+.main {
+  flex: 1 0 auto;
 }
 
 h1 {
@@ -42,7 +52,7 @@ h1 {
 header.navigation {
   $base-border-color: gainsboro !default;
   $base-border-radius: 3px !default;
-  $action-color: #477DCA !default;
+  $action-color: #477dca !default;
   $dark-gray: #333 !default;
   $white: #fff !default;
   $large-screen: 53.75em !default;
@@ -52,7 +62,8 @@ header.navigation {
   $navigation-height: 60px;
   $navigation-nav-button-background: $action-color;
   $navigation-nav-button-background-hover: lighten($navigation-background, 10%);
-  $navigation-nav-button-border: 1px solid lighten($navigation-nav-button-background, 20%);
+  $navigation-nav-button-border: 1px solid
+    lighten($navigation-nav-button-background, 20%);
   $navigation-search-background: lighten($navigation-background, 5);
   $navigation-search-border: 1px solid darken($navigation-background, 5);
   $navigation-active-link-color: transparentize(white, 0.5);
@@ -86,8 +97,7 @@ header.navigation {
     }
   }
 
-
-// Mobile view
+  // Mobile view
 
   .navigation-menu-button {
     color: $navigation-color;
@@ -99,13 +109,12 @@ header.navigation {
     text-decoration: none;
     text-transform: uppercase;
 
-    @include media ($horizontal-bar-mode) {
+    @include media($horizontal-bar-mode) {
       display: none;
     }
   }
 
-
-// Nav menu
+  // Nav menu
 
   nav {
     float: none;
@@ -113,7 +122,7 @@ header.navigation {
     z-index: 9999999;
     padding-left: 3em;
 
-    @include media ($horizontal-bar-mode) {
+    @include media($horizontal-bar-mode) {
       float: left;
     }
   }
@@ -131,15 +140,14 @@ header.navigation {
       display: block;
     }
 
-    @include media ($horizontal-bar-mode) {
+    @include media($horizontal-bar-mode) {
       display: inline;
       margin: 0;
       padding: 0;
     }
   }
 
-
-// The nav items
+  // The nav items
 
   ul li.nav-link {
     background: $navigation-background;
@@ -150,8 +158,8 @@ header.navigation {
     text-align: right;
     width: 100%;
     z-index: 9999;
-    
-    @include media ($horizontal-bar-mode) {
+
+    @include media($horizontal-bar-mode) {
       background: transparent;
       display: inline;
       line-height: $navigation-height;
@@ -159,7 +167,7 @@ header.navigation {
       width: auto;
       padding-right: 1.8em;
     }
-    
+
     a {
       position: relative;
       display: inline-block;
@@ -180,7 +188,7 @@ header.navigation {
       }
 
       &:after {
-        content: '';
+        content: "";
         display: block;
         position: absolute;
         bottom: 15px;
@@ -233,7 +241,11 @@ header.navigation {
     .hello {
       font-size: 5em;
       text-shadow: 0px 25px 25px rgba(0, 0, 0, 0.1);
-      background-image: linear-gradient(to right, rgba(255,255,255,0.3) 40%, rgba(255, 255, 255, 0) 20%);
+      background-image: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0.3) 40%,
+        rgba(255, 255, 255, 0) 20%
+      );
       background-position: 0 85px;
       background-size: 5px 2px;
       background-repeat: repeat-x;
@@ -251,7 +263,7 @@ header.navigation {
     }
   }
 
-   .hero-logo {
+  .hero-logo {
     margin: auto;
   }
 }
@@ -266,20 +278,14 @@ header.navigation {
   $base-border-radius: 3px !default;
   $base-background-color: white !default;
   $dark-gray: #333 !default;
-  $light-gray: #DDD !default;
+  $light-gray: #ddd !default;
   $base-font-color: $dark-gray !default;
   $flex-box-border-color: $light-gray;
   $flex-box-border: 1px solid $flex-box-border-color;
   $flex-box-background: lighten($light-gray, 10%);
   $flex-box-width: 18em;
   $flex-box-color: transparentize($base-font-color, 0.3);
-  $flex-box-top-colors:
-    tomato,
-    #72BFBF,
-    #92B1E3,
-    #E3D743,
-    #CCC,
-    #F6C05C;
+  $flex-box-top-colors: tomato, #72bfbf, #92b1e3, #e3d743, #ccc, #f6c05c;
 
   @include clearfix;
   align-items: stretch;
@@ -294,7 +300,8 @@ header.navigation {
     align-self: stretch;
     background: $flex-box-background;
     border-radius: $base-border-radius;
-    box-shadow: inset 0 0 1px $flex-box-border-color, 0 2px 4px darken($base-background-color, 10%);
+    box-shadow: inset 0 0 1px $flex-box-border-color,
+      0 2px 4px darken($base-background-color, 10%);
     display: block;
     flex: 2 2 15em;
     padding: 0 0 2em 0;
@@ -345,7 +352,7 @@ header.navigation {
 .grid-items-lines {
   $base-background-color: white !default;
   $dark-gray: #333 !default;
-  $light-gray: #DDD !default;
+  $light-gray: #ddd !default;
   $medium-screen: 40em !default;
   $large-screen: 53.75em !default;
   $base-font-color: $dark-gray !default;
@@ -367,7 +374,7 @@ header.navigation {
     }
     margin-bottom: 4em;
     background-color: $base-background-color;
-    
+
     transition: all 0.2s ease-in-out;
     &:hover {
       box-shadow: 0 10px 20px #c7cad1;
@@ -393,25 +400,25 @@ header.navigation {
   }
 
   .grid-item img {
-      display: block;
-      width: 100%;
-    }
+    display: block;
+    width: 100%;
+  }
 
   .grid-item h1 {
-      color: $grid-item-color;
-      font-size: 1.3em;
-      margin-bottom: 0.4em;
-    }
+    color: $grid-item-color;
+    font-size: 1.3em;
+    margin-bottom: 0.4em;
+  }
 
   .grid-item p {
-      color: transparentize($grid-item-color, 0.4);
-      text-transform: capitalize;
-      line-height: 1.5em;
+    color: transparentize($grid-item-color, 0.4);
+    text-transform: capitalize;
+    line-height: 1.5em;
 
-      @include media($medium-screen) {
-        max-width: 70%;
-      }
+    @include media($medium-screen) {
+      max-width: 70%;
     }
+  }
 
   .grid-item-big {
     flex-direction: column;
@@ -459,6 +466,7 @@ header.navigation {
   background: $footer-background;
   padding: ($base-spacing * 2) $gutter;
   width: 100%;
+  flex-shrink: 0;
 
   .footer-logo {
     margin-bottom: 2em;
@@ -591,7 +599,7 @@ header.navigation {
 }
 
 .porcelain-bg {
-  background-color: #F4F6F7;
+  background-color: #f4f6f7;
 }
 
 .font-lg {
@@ -603,7 +611,7 @@ header.navigation {
 }
 
 .line-height-md {
-  line-height: 1.6em
+  line-height: 1.6em;
 }
 
 .border-bottom-red {
@@ -648,7 +656,7 @@ header.navigation {
   .next-button {
     border: solid 2px black;
     border-radius: 2em;
-    color: rgba(0,0,0,0.8);
+    color: rgba(0, 0, 0, 0.8);
     width: 80%;
     height: 3em;
     font-size: 0.7em;
@@ -671,7 +679,7 @@ header.navigation {
 
     &:hover {
       cursor: pointer;
-      background-color: rgba(0,0,0,0.1);
+      background-color: rgba(0, 0, 0, 0.1);
     }
   }
 }
@@ -681,7 +689,7 @@ header.navigation {
     display: flex;
     justify-content: center;
   }
-  
+
   .about-me-text {
     width: 100%;
     display: flex;
@@ -692,14 +700,22 @@ header.navigation {
       margin-bottom: 0;
     }
   }
-  
+
   .about-me-img-container {
     position: relative;
     width: 100%;
-  
+
     img {
       height: 100%;
       width: 100%;
     }
   }
+}
+
+.coming-soon {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  font-size: 5em;
 }
